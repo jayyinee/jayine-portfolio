@@ -313,7 +313,7 @@ footer {
 
 .two-columns-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2vw 2vw;
   padding-top: 40px;
   padding-bottom: 3vw;
