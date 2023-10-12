@@ -135,12 +135,12 @@ footer {
     ". jayine jayine jayine ."
     "yellow yellow . pink pink "
     "yellow yellow . pink pink ";
-  padding-bottom: 50px;
+  padding-bottom: 5vw;
 }
 
 .home-div1 { grid-area: purple; }
 .home-div2 { grid-area: blue; }
-.home-div3 { grid-area: jayine; }
+.home-div3 { grid-area: jayine; margin-top: auto; margin-bottom: auto;}
 .home-div4 { grid-area: yellow; }
 .home-div5 { grid-area: pink; }
 
@@ -154,6 +154,11 @@ footer {
   object-fit: cover;
   width: 90%;
   justify-self: end;
+}
+
+.blob-bottom {
+  display: grid;
+  align-items: end;
 }
 
 /* for the "jayine nguyen" image */
@@ -233,7 +238,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5vw 5vw;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 3vw;
 }
 
 .three-columns-grid > img {
@@ -292,6 +297,7 @@ footer {
   column-gap: 5vw;
   line-height: 10vw;
   padding-top: 40px;
+  padding-bottom: 3vw;
 }
 
 #art-gallery > img {
@@ -308,7 +314,7 @@ footer {
 .two-columns-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr));
-  grid-gap: 70px 70px;
+  grid-gap: 2vw 2vw;
   padding-top: 40px;
   padding-bottom: 3vw;
 }
@@ -339,7 +345,7 @@ footer {
 .banner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 70px;
+  grid-gap: 2vw;
   place-items: center;
 }
 
@@ -420,7 +426,7 @@ h4 {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "solid-icon outline-icon";
-  grid-gap: 70px;
+  grid-gap: 2vw;
   align-items: center;
 }
 
@@ -651,17 +657,12 @@ h4 {
     line-height: 25px;
   }
 
-  .two-columns-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
   .logo-title-grid > img {
     width: 50%;
   }
 
   #home-grid {
-    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr 1fr 0.5fr 0.3fr;
   }
 
   .jayine-home p {
