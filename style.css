@@ -392,7 +392,7 @@ h4 {
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "description logo";
-  grid-gap: 70px;
+  grid-gap: 7vw;
   align-items: center;
 }
 
@@ -487,8 +487,8 @@ h4 {
   grid-template-areas:
     "manga-cover fanmade"
     "manga-cover black-white";
-  grid-column-gap: 70px;
-  grid-row-gap: 70px;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
 }
 
 #cover {
@@ -700,7 +700,7 @@ h4 {
     grid-template-areas:
       "logo"
       "description";
-    grid-gap: 50px;
+    grid-gap: 5vw;
   }
 
 }
