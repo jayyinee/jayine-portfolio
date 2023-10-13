@@ -225,6 +225,10 @@ footer {
 
 /* MY WORK - start */
 
+.page-title {
+  padding-bottom: 40vw;
+}
+
 .page-title > img {
   display: block;
   margin-left: auto;
@@ -237,7 +241,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5vw 5vw;
-  padding-top: 40px;
   padding-bottom: 3vw;
 }
 
@@ -296,7 +299,6 @@ footer {
   column-count: 3;
   column-gap: 5vw;
   line-height: 10vw;
-  padding-top: 40px;
   padding-bottom: 3vw;
 }
 
@@ -315,7 +317,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2vw 2vw;
-  padding-top: 40px;
   padding-bottom: 3vw;
 }
 
@@ -392,7 +393,7 @@ h4 {
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
     "description logo";
-  grid-gap: 70px;
+  grid-gap: 7vw;
   align-items: center;
 }
 
@@ -487,8 +488,8 @@ h4 {
   grid-template-areas:
     "manga-cover fanmade"
     "manga-cover black-white";
-  grid-column-gap: 70px;
-  grid-row-gap: 70px;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
 }
 
 #cover {
@@ -700,7 +701,7 @@ h4 {
     grid-template-areas:
       "logo"
       "description";
-    grid-gap: 50px;
+    grid-gap: 5vw;
   }
 
 }
