@@ -24,11 +24,8 @@ header {
   min-height: 66px;
   padding: 40px 10%;
   display: flex;
-   display: -webkit-flex;
   justify-content: space-between;
-  -webkit-justify-content: space-between;
   align-items: center;
-  -webkit-align-items: center;
 }
 
 header ul li {
@@ -42,9 +39,7 @@ header ul li a {
   padding: 10px 25px;
   text-decoration: none;
   display: flex;
-  display: -webkit-flex;
   justify-content: space-between;
-  -webkit-justify-content: space-between;
 }
 
 header ul li a:hover {
@@ -566,7 +561,6 @@ h4 {
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
-    -webkit-align-items: center;
     z-index: 2;
   }
 
@@ -603,11 +597,11 @@ h4 {
   /* header - end */
 
   .logo-container {
-    width: 25vw;
+    width: 30vw;
   }
 
   .logo {
-    width: fit-content;
+    max-width: -webkit-fill-available;
   }
 
   .three-columns-grid { /* change to two columns in smaller screen */
