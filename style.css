@@ -712,3 +712,17 @@ h4 {
   }
 
 }
+
+@media only screen and (max-width: 500px) {
+  #home-grid {
+    grid-template-rows: 0.4fr 0.5fr 1fr 0.5fr 0.4fr;
+  }
+
+  #home-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+}
