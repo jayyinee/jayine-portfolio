@@ -82,7 +82,10 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.className = 'image-modal';
     modal.innerHTML = `
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
+            <div class="close-modal">
+                <span></span>
+                <span></span>
+            </div>
             <img class="modal-image" src="" alt="">
         </div>
     `;
@@ -129,14 +132,37 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         .close-modal {
             position: absolute;
-            top: 20px; right: 35px;
-            color: white; font-size: 40px; font-weight: bold;
-            cursor: pointer; z-index: 1001;
+            top: 35px; 
+            right: 35px;
+            color: white; 
+            font-size: 40px; 
+            font-weight: bold;
+            cursor: pointer; 
+            z-index: 1001;
             transition: opacity 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 20px;
+            height: 15px;
         }
-        .close-modal:hover { opacity: 0.7; }
+        .close-modal span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: white;
+            transform: rotate(45deg) translate(4px, 5px);
+        }
+        .close-modal span:nth-child(2) {
+            transform: rotate(-45deg) translate(4px, -5px);
+        }
+        .close-modal:hover { 
+            opacity: 0.7; 
+        }
         @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
     `;
+
     document.head.appendChild(modalStyles);
 
     window.openMobileMenu = function () {
