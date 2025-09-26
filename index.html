@@ -1,37 +1,433 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
-  </head>
-  <body>
-    <div id="home-grid">
-      <div class="zoom home-div1 blob-left"><a href="art.html"><img src="blobs/purple-blob.svg" alt="a purple blob"></a></div>
-      <div class="zoom home-div2 blob-right"><a href="design.html"><img src="blobs/blue-blob.svg" alt="a blue blob"></a></div>
-      <div class="home-div3 jayine-home"><a href="about-me.html"><img class="zoom" src="titles/jayine-nguyen.svg" alt="logo"></a>
-        <p>Graphic Designer. Born in Sai Gon, raised in Vietnam and H-Town, based in New York. Love to watch K-drama, read manga, and collect stuffed animals.</p>
-      </div>
-      <div class="zoom home-div4 blob-left blob-bottom"><a href="jayine-resume.pdf" target="_blank"><img src="blobs/yellow-blob.svg" alt="a yellow blob"></a></div>
-      <div class="zoom home-div5 blob-right blob-bottom"><a href="hand-lettering.html"><img src="blobs/pink-blob.svg" alt="a pink blob"></a></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Jayine Nguyen</title>
+</head>
+
+<body>
+    <header class="mobile-header">
+        <a href="#intro" class="accordion-title" data-target="intro">
+            <img class="mobile-logo" src="assets/jayine-logo.svg" alt="Logo">
+        </a>
+
+        <div class="hamburger-menu" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="#graphic-design" class="accordion-title" data-target="graphic-design">Graphic Design</a>
+        <a href="#motion-graphics" class="accordion-title" data-target="motion-graphics">Motion Graphics</a>
+        <a href="#3d-modeling" class="accordion-title" data-target="3d-modeling">3D Modeling</a>
+        <a href="#other-projects" class="accordion-title" data-target="other-projects">Other Projects</a>
+        <a href="#about-me" class="accordion-title" data-target="about-me">About Me</a>
+        <a href="https://drive.google.com/file/d/19EWcZbReKeWb438QUgej0XJImsIeLQu-/view?usp=sharing">Resume</a>
+    </nav>
+
+
+
+    <div class="container">
+        <aside class="navbar">
+            <div class="logo-container">
+                <a href="#intro" class="accordion-title" data-target="intro">
+                    <img class="logo" src="assets/jayine-logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="accordion">
+                <a href="#graphic-design" class="accordion-title" data-target="graphic-design">Graphic
+                    Design</a>
+                <a href="#motion-graphics" class="accordion-title" data-target="motion-graphics">Motion Graphics</a>
+                <a href="#3d-modeling" class="accordion-title" data-target="3d-modeling">3D Modeling</a>
+                <a href="#other-projects" class="accordion-title" data-target="other-projects">Other Projects</a>
+            </div>
+
+            <div class="navbar-bottom">
+                <nav>
+                    <ul>
+                        <li><a href="#about-me" class="accordion-title" data-target="about-me">About Me</a></li>
+                        <li><a
+                                href="https://drive.google.com/file/d/19EWcZbReKeWb438QUgej0XJImsIeLQu-/view?usp=sharing">Resume</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>&copy; 2025 Jayine Nguyen</p>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="content-section active" id="intro">
+                <div class="intro-section">
+                    <div id="intro-container">
+                        <h1 id="word">jayine nguyễn</h1>
+                        <div id="word-function">
+                            <p id="pronunciation">/ˈdʒeɪ.ɪn ˈwɪn/</p>
+                            <p id="speech">noun</p>
+                        </div>
+                        <p id="definition">1. a multimedia designer who strives to create work that is accessible and
+                            inclusive</p>
+                        <p id="definition">2. a homebody that enjoys asian dramas, comics, video games, blind boxes,
+                            and plushies
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="graphic-design">
+                <div class="projects-container">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">NYU Welcome 2024</p>
+                            <p class="project-tags">Brand Identity ✦ Merch Design ✦ Digital Graphics ✦ Environmental
+                                Graphics</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="graphic-design/welcome-24/logo.gif" alt="NYU Welcome 2024 Logo">
+                            <img src="graphic-design/welcome-24/nametag.jpg" alt="Nametag Mockup">
+                            <img src="graphic-design/welcome-24/main-doors.jpg" alt="Designs on Main Doors">
+                            <img src="graphic-design/welcome-24/tote.png" alt="Tote Bag Mockup">
+                            <img src="graphic-design/welcome-24/side-doors.jpg" alt="Designs on Side Doors">
+                            <img src="graphic-design/welcome-24/nyuwelcome-insta.png" alt="NYU Welcome Instagram Posts">
+                            <img src="graphic-design/welcome-24/shirts.png" alt="T-shirts Mockup">
+                            <img src="graphic-design/welcome-24/transfer-insta.png"
+                                alt="Transfer Program Instagram Posts">
+                            <img src="graphic-design/welcome-24/pins.png" alt="Pin Buttons Mockup">
+                            <img src="graphic-design/welcome-24/fans.jpeg" alt="NYU Welcome Fans">
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">NYU Welcome 2023</p>
+                            <p class="project-tags">Brand Identity ✦ Merch Design ✦ Digital Graphics ✦ Environmental
+                                Graphics</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="graphic-design/welcome-23/logo.png" alt="NYU Welcome 2023 Logo">
+                            <img src="graphic-design/welcome-23/postcard.png"
+                                alt="Altered Logo for Spring Welcome 2024">
+                            <img src="graphic-design/welcome-23/main-doors.png" alt="Designs on Main Doors">
+                            <img src="graphic-design/welcome-23/tote.png" alt="Tote Bag Mockup">
+                            <img src="graphic-design/welcome-23/nyuwelcome-insta.png" alt="NYU Welcome Instagram Posts">
+                            <img src="graphic-design/welcome-23/shirts.png" alt="T-shirts Mockup">
+                            <img src="graphic-design/welcome-23/pins.png" alt="Pin Buttons Mockup">
+                            <img src="graphic-design/welcome-23/stairs.png" alt="Design on Stairs">
+                            <img src="graphic-design/welcome-23/nametags.jpg" alt="Nametags Mockup">
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">NYU Berkley Center for Entrepreneurship</p>
+                            <p class="project-tags">Digital Design ✦ Publication Design ✦ Promotional Design</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="graphic-design/berkley-center/stickers.png" alt="Stickers Mockup">
+                            <img src="graphic-design/berkley-center/nvc-finalist.png"
+                                alt="Challenge Finalist Graphic 1">
+                            <img src="graphic-design/berkley-center/sounding-board.png"
+                                alt="Sounding Board Advisors Graphic">
+                            <img src="graphic-design/berkley-center/directory.gif" alt="Directory Overview">
+                            <img src="graphic-design/berkley-center/challenge-apps.png"
+                                alt="Entrepreneur Challenge Graphic">
+                            <img src="graphic-design/berkley-center/hvc-finalist.png"
+                                alt="Challenge Finalist Graphic 2">
+                            <img src="graphic-design/berkley-center/regular-header.png" alt="Regular Newsletter Header">
+                            <img src="graphic-design/berkley-center/newsletter-subheaders.png"
+                                alt="Newsletter Subheaders">
+                            <img src="graphic-design/berkley-center/special-announcement.png"
+                                alt="Special Announcement Newsletter Header">
+                            <img src="graphic-design/berkley-center/startup-advising.png"
+                                alt="Startup Advising Graphic">
+                            <img src="graphic-design/berkley-center/dtvc-finalist.png"
+                                alt="Challenge Finalist Graphic 3">
+                            <img src="graphic-design/berkley-center/report-cover.png" alt="End of Year Report Cover">
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Vietnamese Student Association</p>
+                            <p class="project-tags">Logo ✦ Merch Design ✦ Digital Graphics ✦ Promotional Design</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="graphic-design/vsa/logo.png" alt="NYU VSA Logo">
+                            <img src="graphic-design/vsa/vsa-insta.png" alt="NYU VSA Instagram Posts">
+                            <img src="graphic-design/vsa/eboard-reveal.png"
+                                alt="NYU VSA 2023-2024 E-Board Reveal Posts">
+                            <img src="graphic-design/vsa/banners.png" alt="Newsletter and Instagram Banners">
+                            <img src="graphic-design/vsa/jacket.jpg" alt="NYU VSA E-Board Jacket">
+                            <img src="graphic-design/vsa/reel-covers.png" alt="NYU VSA Instagram Reel Covers">
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Asian American Christian Fellowship</p>
+                            <p class="project-tags">Merch Design ✦ Digital Graphics</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="graphic-design/aacf/hoodie.png" alt="NYU AACF 2024-2025 Merch">
+                            <img src="graphic-design/aacf/tuesday-takeover.png" alt="Tuesday Takeover Graphic">
+                            <img src="graphic-design/aacf/prayer-walk.png" alt="Prayer Walk Graphic">
+                            <img src="graphic-design/aacf/mid-autumn-fest.png" alt="Mid Autumn Festival Graphic">
+                            <img src="graphic-design/aacf/small-group.png"
+                                alt="Small Group Leaders Introduction Graphic">
+                            <img src="graphic-design/aacf/christmas-party.png" alt="Christmas Party Graphic">
+                            <img src="graphic-design/aacf/friendsgiving.png" alt="Friendgiving Potluck Graphic">
+                            <img src="graphic-design/aacf/prayer-meeting.png" alt="Prayer Meeting Graphic">
+                            <img src="graphic-design/aacf/guys-serve-girls.png" alt="Guys Serve Girls Recap Graphic">
+                            <img src="graphic-design/aacf/last-cornerstone.png" alt="Last Cornerstone Graphic">
+                            <img src="graphic-design/aacf/ice-skating.png" alt="Ice Skating Graphic">
+                            <img src="graphic-design/aacf/nso-recap.png" alt="New Student Outreach Recap Graphic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="motion-graphics">
+                <div class="projects-container">
+                    <div class="project-content">
+                        <div class="video-gallery">
+                            <div class="video-item">
+                                <video poster="motion-graphics/logo-thumbnail.png" controls>
+                                    <source src="motion-graphics/logo.mp4" type="video/mp4">
+                                    <a href="motion-graphics/logo.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">Logo Animation</div>
+                                    <div class="video-description">An animated logo for my fictional brand Elysium
+                                        Cat Cafe.</div>
+                                </div>
+                            </div>
+
+                            <div class="video-item">
+                                <video poster="motion-graphics/title-thumbnail.png" controls>
+                                    <source src="motion-graphics/title-sequence.mp4" type="video/mp4">
+                                    <a href="motion-graphics/title-sequence.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">Title Sequence</div>
+                                    <div class="video-description">A title sequence inspired the Korean
+                                        drama <i>Lovely Runner</i>.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Kinetic Typography</p>
+                            <p class="project-tags">A collection of common English anagrams</p>
+                        </div>
+                        <div class="video-gallery">
+                            <div class="video-item">
+                                <video poster="motion-graphics/kinetic_text/listen-thumbnail.png" controls>
+                                    <source src="motion-graphics/kinetic_text/listen_silent.mp4" type="video/mp4">
+                                    <a href="motion-graphics/kinetic_text/listen_silent.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">To Listen Is To Be Silent</div>
+                                </div>
+                            </div>
+
+                            <div class="video-item">
+                                <video poster="motion-graphics/kinetic_text/detectives-thumbnail.png" controls>
+                                    <source src="motion-graphics/kinetic_text/detectives.mp4" type="video/mp4">
+                                    <a href="motion-graphics/kinetic_text/detectives.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">Detectives</div>
+                                </div>
+                            </div>
+
+                            <div class="video-item">
+                                <video poster="motion-graphics/kinetic_text/animosity-thumbnail.png" controls>
+                                    <source src="motion-graphics/kinetic_text/animosity.mp4" type="video/mp4">
+                                    <a href="motion-graphics/kinetic_text/animosity.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">Animosity Is No Amity</div>
+                                </div>
+                            </div>
+
+                            <div class="video-item">
+                                <video poster="motion-graphics/kinetic_text/astronomer-thumbnail.png" controls>
+                                    <source src="motion-graphics/kinetic_text/astronomer.mp4" type="video/mp4">
+                                    <a href="motion-graphics/kinetic_text/astronomer.mp4">Download video</a>
+                                </video>
+                                <div class="video-info">
+                                    <div class="video-title">Astronomer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="3d-modeling">
+                <div class="projects-container">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Yotsuba's Living Room</p>
+                            <p class="project-tags">The living room of Yotsuba's house from the manga series Yotsuba&!
+                            </p>
+                        </div>
+                        <div class="single-column">
+                            <img src="3d-modeling/yotsuba-house/render-1.png"
+                                alt="Front Angle of Youtsuba's Living Room">
+                            <img src="3d-modeling/yotsuba-house/render-2.png"
+                                alt="High Angle of Youtsuba's Living Room">
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Polly Pocket</p>
+                        </div>
+                        <div class="model-gallery">
+                            <img src="3d-modeling/polly-pocket/close-center.png"
+                                alt="Closed-up Front Angle of the Polly Pocket">
+                            <img src="3d-modeling/polly-pocket/right-isometric.png"
+                                alt="Right Isometric Angle of the whole Polly Pocket">
+                            <img src="3d-modeling/polly-pocket/close-left.png"
+                                alt="Closed-up Left Angle of the Polly Pocket">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="other-projects">
+                <div class="projects-container">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Hand Lettering</p>
+                        </div>
+                        <div class="graphic-gallery">
+                            <img src="other-projects/hand-lettering/lettering-1.png" alt="Pace Yourself">
+                            <img src="other-projects/hand-lettering/lettering-2.png" alt="Fragrant Spring">
+                            <img src="other-projects/hand-lettering/lettering-3.png" alt="Be Communicative">
+                            <img src="other-projects/hand-lettering/lettering-4.png" alt="Fresh Tuesday">
+                            <img src="other-projects/hand-lettering/lettering-5.png" alt="Wonderful Rainbow">
+                            <img src="other-projects/hand-lettering/lettering-6.png" alt="A Brighter Tomorrow">
+                            <img src="other-projects/hand-lettering/lettering-7.png" alt="(sweet like) Honey Lavender">
+                            <img src="other-projects/hand-lettering/lettering-8.png" alt="Grow Gratitude">
+                            <img src="other-projects/hand-lettering/lettering-9.png" alt="Bars">
+                            <img src="other-projects/hand-lettering/lettering-10.png" alt="Lucky Love">
+                            <img src="other-projects/hand-lettering/lettering-11.png" alt="Chase Your Dream">
+                            <img src="other-projects/hand-lettering/lettering-12.png" alt="Eventful Semester">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-info">
+                            <p class="project-name">Pitch Deck</p>
+                        </div>
+                        <div class="single-column">
+                            <img src="other-projects/pitch-deck.png" alt="Pitch Deck Mockup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="about-me">
+                <div class="about-section">
+                    <div class="top-section">
+                        <div class="headshot-container">
+                            <img src="assets/headshot.jpg" alt="Jayine Nguyen Headshot">
+                        </div>
+                        <div class="text-container">
+                            <p>Hello, I'm Jayine Nguyen!</p>
+                            <p>I'm a Multimedia Designer passionate about bringing ideas to life through my specialties
+                                in
+                                graphic design, motion graphics,and 3D
+                                modeling. I also have a versatile skillset in branding, typography,
+                                illustration, animation, web design, UX/UI
+                                design, art direction, photography, and video editing.</p>
+                            <p>I was born and raised in Ho Chi Minh City, Vietnam, moved to Houston, TX in
+                                middle
+                                school, and later studied at
+                                Integrated Design & Media with a minor in Korean at New York University.
+                                Growing up
+                                across different cultures and
+                                immersing myself in global pop culture & media in my free time has shaped
+                                both my
+                                worldview and design practice.
+                                My passion for design, combined with my love for cultural exploration,
+                                inspired me to
+                                craft designs that are dynamic, meaningful, and inclusive for diverse
+                                audiences.</p>
+                            <p>When I'm not designing, you can find me hanging out with friends to explore
+                                yummy food
+                                and snack places, add cute blind boxes and plushies to my collection, and
+                                visit local
+                                community events; or staying at home to try out new recipes, curl up in my
+                                bed with
+                                asian dramas & comics, and play video games.</p>
+                        </div>
+                    </div>
+
+                    <div class="fun-fact-section">
+                        <div>
+                            <p>Fun fact: I recently adopted two male kitties from the same litter 3 months ago.
+                                The black
+                                kitty is named Shoyu, meaning
+                                "soy sauce" in Japanese. The white kitty with black spots is named Gomu, and his name
+                                is more
+                                complicated — it is a combination of Goma ("sesame" in
+                                Japanese because I love both white and black sesame) + Moomoo (because he looks
+                                like a cow).
+                                Together, it accidentally
+                                becomes Gomu ("rubber" in Japanese, which is also the name of Luffy's power from
+                                my favorite
+                                manga <i>One Piece</i>).
+                            </p>
+                        </div>
+
+                        <div class="kitties-gallery">
+                            <img src="kitties/shoyu-1.jpeg" alt="Shoyu is standing up while trying to poop.">
+                            <img src="kitties/gomu-1.jpeg" alt="Gomu is watching a cooking competition.">
+                            <img src="kitties/both-1.jpeg" alt="Shoyu and Gomu are laying on their pet mat together.">
+                            <img src="kitties/shoyu-2.jpeg"
+                                alt="Shoyu is sticking out this tongue menacingly while standing on top of the food bowl stand.">
+                            <img src="kitties/gomu-2.jpeg" alt="Gomu mis ogging the camera while licking his paw.">
+                            <img src="kitties/both-2.jpeg" alt="Gomu is hugging Shoyu.">
+                            <img src="kitties/shoyu-3.jpeg" alt="A funny .5 photo of Shoyu.">
+                            <img src="kitties/gomu-3.jpeg" alt="A wide-eyed Gomu.">
+                            <img src="kitties/both-3.jpeg" alt="Gomu and Shoyu in my lap.">
+                            <img src="kitties/shoyu-4.jpeg" alt="Shoyu is grooming his spread-out toes.">
+                            <img src="kitties/gomu-4.jpeg" alt="Gomu is curling up in a circle while sleeping.">
+                            <img src="kitties/both-4.jpeg" alt="Shoyu is hugging and grooming sleeping Gomu.">
+                            <img src="kitties/shoyu-5.jpeg"
+                                alt="A blurry photo of distraught Shoyu wearing a toast-shaped soft cone collar.">
+                            <img src="kitties/gomu-5.jpeg"
+                                alt="Gomu is laying on his back and spreading out his limbs while wearing an avocado-shaped soft cone collar.">
+                            <img src="kitties/both-5.jpeg"
+                                alt="Gomu and Shoyu are curled up in opposite directions while sleeping, resembling the yin-yang symbol.">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <footer>
+                <p>&copy; 2025 Jayine Nguyen</p>
+            </footer>
+        </main>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="social-icons">
-          <a href="https://www.instagram.com/jayyinee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://discordapp.com/users/404337839107735555" target="_blank"><i class="fa-brands fa-discord"></i></a>
-          <a href="https://www.facebook.com/jayine.nguyen" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/jayine-nguyen/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:jayine.nguyen@nyu.edu" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <p>Copyright &copy; 2023 Jayine Nguyen. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+
+</body>
+
 </html>
