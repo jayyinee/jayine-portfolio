@@ -505,18 +505,3 @@ footer {
         font-size: 1.5vw;
     }
 }
-=======
-@media only screen and (max-width: 500px) {
-  #home-grid {
-    grid-template-rows: 0.4fr 0.5fr 1fr 0.5fr 0.4fr;
-  }
-
-  #home-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-}
->>>>>>> 0ffb268191c011bf13f5edd82686bbf291aae8b4
