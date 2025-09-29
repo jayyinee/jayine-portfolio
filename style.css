@@ -62,8 +62,12 @@ a[href="#intro"] {
     display: block;
     text-decoration: none;
     color: #000;
+<<<<<<< HEAD
     font-size: 0.8rem;
     font-weight: 500;
+=======
+    font-size: 0.9rem;
+>>>>>>> ef18c1433566769000cb6d8c7f4c18489df533c5
     cursor: pointer;
     transition: opacity 0.4s;
     user-select: none;
