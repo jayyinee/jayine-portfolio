@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const scrollbarWidth = getScrollbarWidth();
         document.body.style.overflow = 'hidden';
-        document.body.style.paddingRight = scrollbarWidth + 'px';
     };
 
     window.closeMobileMenu = function () {
