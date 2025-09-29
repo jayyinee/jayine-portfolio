@@ -27,7 +27,6 @@ body {
     flex-direction: column;
     height: calc(100vh - 3vw);
     width: 15%;
-    font-weight: 500;
     z-index: 100;
 }
 
@@ -63,7 +62,8 @@ a[href="#intro"] {
     display: block;
     text-decoration: none;
     color: #000;
-    font-size: 0.9vw;
+    font-size: 0.8rem;
+    font-weight: 500;
     cursor: pointer;
     transition: opacity 0.4s;
     user-select: none;
@@ -93,7 +93,7 @@ a[href="#intro"] {
     display: block;
     text-decoration: none;
     color: #000;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
 }
 
 .navbar-bottom nav a:hover {
@@ -104,7 +104,7 @@ a[href="#intro"] {
 
 .navbar-bottom p {
     font-weight: 400;
-    font-size: 0.6vw;
+    font-size: 0.6rem;
     color: #666;
     margin-top: 1vw;
     text-wrap: wrap;
@@ -269,19 +269,13 @@ a[href="#intro"] {
 }
 
 /* about page */
-.about-section {
-    display: grid;
-    gap: 2vw;
-    min-height: calc(100vh - 3vw);
-    border-top: 0.5px solid;
-}
-
 .top-section {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 2vw;
     align-items: stretch;
     padding-top: 8px;
+    border-top: 0.5px solid;
 }
 
 .headshot-container {
@@ -306,7 +300,7 @@ a[href="#intro"] {
     font-size: 0.8rem;
     line-height: 2;
     border-top: 0.5px solid;
-    padding-top: 2vw;
+    padding-top: 8px;
 }
 
 .kitties-gallery {
@@ -461,7 +455,7 @@ footer {
 
     .text-container,
     .fun-fact-section {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     #word {

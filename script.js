@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function getActiveSection() {
-        const hash = window.location.hash.substring(1);
+        const hash = window.location.hash.slice(1);
         if (hash && document.getElementById(hash)) return hash;
         return 'intro';
     }
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        window.closeMobileMenu();
     }
 
     const hamburger = document.getElementById('hamburger');
