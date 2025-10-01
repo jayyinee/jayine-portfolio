@@ -48,7 +48,7 @@ a[href="#intro"] {
 }
 
 .logo:hover {
-    filter: opacity(50%);
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -98,7 +98,7 @@ a[href="#intro"] {
 }
 
 .navbar-bottom nav a:hover {
-    filter: opacity(50%);
+    opacity: 0.5;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -221,6 +221,15 @@ a[href="#intro"] {
     font-size: 0.7rem;
     font-weight: 400;
     line-height: 1.4;
+}
+
+.graphic-gallery img,
+.model-gallery img,
+.single-column img,
+.headshot-container img,
+.kitties-gallery img,
+video {
+    cursor: pointer;
 }
 
 /* landing page */
