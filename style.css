@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 html {
     overflow-y: scroll;
@@ -12,7 +12,7 @@ html {
 
 body {
     margin: 1.5vw;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -67,7 +67,7 @@ a[href="#intro"] {
     cursor: pointer;
     transition: opacity 0.4s;
     user-select: none;
-    padding-bottom: 1vw;
+    padding-bottom: 0.9vw;
 }
 
 .accordion-title:hover {
@@ -75,8 +75,14 @@ a[href="#intro"] {
 }
 
 .accordion-title.active {
-    font-weight: 800;
+    font-weight: 700;
 }
+
+/* created purely for spacing between linked and resume */
+.resume {
+    padding-top: 0.9vw;
+}
+
 
 .navbar-bottom {
     position: absolute;
@@ -104,10 +110,9 @@ a[href="#intro"] {
 }
 
 .navbar-bottom p {
-    font-weight: 400;
     font-size: 0.6rem;
     color: #666;
-    margin-top: 1vw;
+    margin-top: 0.9vw;
     text-wrap: wrap;
 }
 
@@ -156,7 +161,7 @@ a[href="#intro"] {
 
 .project-name {
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .project-tags {
@@ -407,7 +412,7 @@ footer {
     color: #000;
     font-size: 0.8rem;
     font-weight: 500;
-    padding: 14px 0;
+    padding: 10px 0;
     transition: opacity 0.3s;
 }
 
@@ -416,7 +421,7 @@ footer {
 }
 
 .mobile-nav a.active {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /* tablets & smaller screens */
