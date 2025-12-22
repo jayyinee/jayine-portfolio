@@ -175,15 +175,7 @@ a[href="#intro"] {
     line-height: 0;
 }
 
-.model-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    line-height: 0;
-}
-
 .graphic-gallery>img,
-.model-gallery>img,
 .single-column>img {
     width: 100%;
     padding-top: 8px;
@@ -229,7 +221,6 @@ a[href="#intro"] {
 }
 
 .graphic-gallery img,
-.model-gallery img,
 .single-column img,
 .headshot-container img,
 .kitties-gallery img,
